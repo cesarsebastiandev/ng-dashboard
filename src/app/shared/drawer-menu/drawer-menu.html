@@ -1,0 +1,61 @@
+<mat-nav-list>
+  <mat-list-item routerLink="/dashboard/home" (click)="handleItemClick()">
+    <span class="icon-and-text">
+      <mat-icon class="icon-margin">home</mat-icon>
+      Home
+    </span>
+  </mat-list-item>
+  <mat-list-item routerLink="/dashboard/drawer/table" (click)="handleItemClick()">
+    <span class="icon-and-text">
+      <mat-icon class="icon-margin">phone</mat-icon>
+      Table
+    </span>
+  </mat-list-item>
+  <mat-list-item routerLink="/dashboard/drawer/list" (click)="handleItemClick()">
+    <span class="icon-and-text">
+      <mat-icon class="icon-margin">list</mat-icon>
+      List
+    </span>
+  </mat-list-item>
+
+  <mat-nav-list>
+    <mat-list-item (click)="toggleSubMenu('components')">
+      <span class="icon-and-text">
+        <mat-icon class="icon-margin">https</mat-icon>
+        SubMenu
+        <div class="expand-icon-right">
+          <mat-icon class="expand-icon">
+            {{ subMenuOpen() === "components" ? "expand_less" : "expand_more" }}
+          </mat-icon>
+        </div>
+      </span>
+    </mat-list-item>
+
+    @if(subMenuOpen() === 'components'){
+    <div>
+      <mat-list-item
+        routerLink="/dashboard/drawer/buttons"
+        class="submenu-content"
+        (click)="handleItemClick()"
+      >
+        <span class="icon-and-text">
+          <mat-icon class="icon-margin">rss_feed</mat-icon>
+          Buttons
+        </span>
+      </mat-list-item>
+
+      <mat-list-item
+        routerLink="/dashboard/drawer/tabs"
+        class="submenu-content"
+        (click)="handleItemClick()"
+      >
+        <span class="icon-and-text">
+          <mat-icon class="icon-margin">sentiment_satisfied_alt</mat-icon>
+          Tabs
+        </span>
+      </mat-list-item>
+    </div>
+
+    }
+  </mat-nav-list>
+</mat-nav-list>

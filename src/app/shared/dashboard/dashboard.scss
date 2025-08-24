@@ -1,0 +1,30 @@
+@use "@angular/material" as mat;
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+// Customize the entire app. Change :root to your selector if you want to scope the styles.
+mat-toolbar {
+  @include mat.toolbar-overrides(
+    (
+      container-background-color: var(--mat-sys-primary),
+      container-text-color: var(--mat-sys-on-primary),
+    )
+  );
+  @include mat.icon-button-overrides(
+    (
+      icon-color: var(--mat-sys-on-primary),
+    )
+  );
+}
+
+.example-container {
+  width: auto;
+  height: 93vh;
+  margin: 1px;
+}
+
+mat-drawer {
+  border-right: 1px solid #c4c6d0;
+  border-radius: 0 !important;
+}

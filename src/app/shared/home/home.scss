@@ -1,0 +1,28 @@
+.example-card {
+  max-width: 400px;
+}
+
+.example-card-footer {
+  padding: 16px;
+}
+
+.container {
+  padding: 2px;
+}
+
+.responsive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 14px;
+}
+
+mat-card:hover {
+  background-color: var(--mat-sys-on-primary);
+  cursor: pointer;
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 4px 20px rgba(126, 35, 165, 0.2);
+}
+
+mat-card-content {
+  flex-grow: 1;
+}
