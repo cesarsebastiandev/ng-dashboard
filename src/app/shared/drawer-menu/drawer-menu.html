@@ -1,6 +1,5 @@
 <mat-nav-list>
   <mat-list-item
-    tabindex="-1"
     routerLink="/dashboard/home"
     (click)="handleItemClick()"
   >
@@ -10,7 +9,6 @@
     </span>
   </mat-list-item>
   <mat-list-item
-    tabindex="-1"
     routerLink="/dashboard/drawer/table"
     (click)="handleItemClick()"
   >
@@ -20,7 +18,6 @@
     </span>
   </mat-list-item>
   <mat-list-item
-    tabindex="-1"
     routerLink="/dashboard/drawer/list"
     (click)="handleItemClick()"
   >
@@ -46,7 +43,6 @@
     @if(subMenuOpen() === 'components'){
     <div>
       <mat-list-item
-        tabindex="-1"
         routerLink="/dashboard/drawer/buttons"
         class="submenu-content"
         (click)="handleItemClick()"
@@ -58,7 +54,6 @@
       </mat-list-item>
 
       <mat-list-item
-        tabindex="-1"
         routerLink="/dashboard/drawer/tabs"
         class="submenu-content"
         (click)="handleItemClick()"
