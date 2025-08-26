@@ -1,26 +1,19 @@
 <mat-nav-list>
-  <mat-list-item
-    routerLink="/dashboard/home"
-    (click)="handleItemClick()"
-  >
+  <mat-list-item routerLink="/dashboard/home" routerLinkActive="activelink" (click)="handleItemClick()" tabindex="-1">
     <span class="icon-and-text">
       <mat-icon class="icon-margin">home</mat-icon>
       Home
     </span>
   </mat-list-item>
-  <mat-list-item
-    routerLink="/dashboard/drawer/table"
-    (click)="handleItemClick()"
-  >
+  <mat-list-item routerLink="/dashboard/drawer/table" routerLinkActive="activelink" (click)="handleItemClick()"
+    tabindex="-1">
     <span class="icon-and-text">
       <mat-icon class="icon-margin">phone</mat-icon>
       Table
     </span>
   </mat-list-item>
-  <mat-list-item
-    routerLink="/dashboard/drawer/list"
-    (click)="handleItemClick()"
-  >
+  <mat-list-item routerLink="/dashboard/drawer/list" routerLinkActive="activelink" (click)="handleItemClick()"
+    tabindex="-1">
     <span class="icon-and-text">
       <mat-icon class="icon-margin">list</mat-icon>
       List
@@ -42,22 +35,16 @@
 
     @if(subMenuOpen() === 'components'){
     <div>
-      <mat-list-item
-        routerLink="/dashboard/drawer/buttons"
-        class="submenu-content"
-        (click)="handleItemClick()"
-      >
+      <mat-list-item routerLink="/dashboard/drawer/buttons" routerLinkActive="activelink" class="submenu-content"
+        (click)="handleItemClick()" tabindex="-1">
         <span class="icon-and-text">
           <mat-icon class="icon-margin">rss_feed</mat-icon>
           Buttons
         </span>
       </mat-list-item>
 
-      <mat-list-item
-        routerLink="/dashboard/drawer/tabs"
-        class="submenu-content"
-        (click)="handleItemClick()"
-      >
+      <mat-list-item routerLink="/dashboard/drawer/tabs" routerLinkActive="activelink" class="submenu-content"
+        (click)="handleItemClick()" tabindex="-1">
         <span class="icon-and-text">
           <mat-icon class="icon-margin">sentiment_satisfied_alt</mat-icon>
           Tabs
