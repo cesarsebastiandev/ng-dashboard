@@ -20,7 +20,7 @@
 }
 
 .activelink {
-  background-color: #dbdada !important;
+  background-color: var(--mat-sys-on-primary) !important;
 }
 
 mat-list-item {

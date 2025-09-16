@@ -10,10 +10,10 @@ import { RouterOutlet } from '@angular/router';
 import { DrawerMenu } from '../drawer-menu/drawer-menu';
 import { MatDrawer } from '@angular/material/sidenav';
 import { ScreenSize } from '../../services/screen-size';
-
+import { ThemeSelector } from "../theme-selector/theme-selector";
 @Component({
   selector: 'app-dashboard',
-  imports: [MaterialModule, SettingsMenu, RouterOutlet, DrawerMenu],
+  imports: [MaterialModule, SettingsMenu, RouterOutlet, DrawerMenu, ThemeSelector],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -7,13 +7,16 @@
 mat-toolbar {
   @include mat.toolbar-overrides(
     (
-      container-background-color: var(--mat-sys-primary),
-      container-text-color: var(--mat-sys-on-primary),
+      // container-background-color: var(--mat-sys-primary),
+      // container-text-color: var(--mat-sys-on-primary),
+      container-background-color: #810081,
+      container-text-color: #ffabf3
     )
   );
   @include mat.icon-button-overrides(
     (
-      icon-color: var(--mat-sys-on-primary),
+      // icon-color: var(--mat-sys-on-primary),
+      icon-color: #ffabf3,
     )
   );
 }

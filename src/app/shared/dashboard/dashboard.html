@@ -12,13 +12,7 @@
   <span>Dashboard</span>
   <span class="example-spacer"></span>
 
-  <button
-    matIconButton
-    class="example-icon favorite-icon"
-    aria-label="Example icon-button with heart icon"
-  >
-    <mat-icon>favorite</mat-icon>
-  </button>
+  <app-theme-selector/>
   <app-settings-menu />
 </mat-toolbar>
 
@@ -29,7 +23,7 @@
     [opened]="!isMobile()"
     position="start"
   >
-    <app-drawer-menu [isMobile]="isMobile()" (itemClicked)="onNavigate()"/>
+    <app-drawer-menu [isMobile]="isMobile()" (itemClicked)="onNavigate()" />
   </mat-drawer>
   <mat-drawer-content style="padding: 5px">
     <router-outlet />
